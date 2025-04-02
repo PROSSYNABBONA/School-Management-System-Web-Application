@@ -1,12 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the mobile menu toggle button and navigation menu
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    // Check if mobile menu is already initialized by header.js
     const navMenu = document.querySelector('.nav-menu');
+    if (!navMenu) {
+        console.log('Navigation menu not found. It may be loaded by header.js');
+        return;
+    }
     
-    // Create menu overlay
-    const menuOverlay = document.createElement('div');
-    menuOverlay.className = 'menu-overlay';
-    document.body.appendChild(menuOverlay);
+    // Get the mobile menu toggle button
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    if (!mobileMenuToggle) {
+        console.log('Mobile menu toggle button not found. It may be loaded by header.js');
+        return;
+    }
+    
+    // Check if menu overlay already exists
+    let menuOverlay = document.querySelector('.menu-overlay');
+    if (!menuOverlay) {
+        // Create menu overlay
+        menuOverlay = document.createElement('div');
+        menuOverlay.className = 'menu-overlay';
+        document.body.appendChild(menuOverlay);
+    }
 
     // Function to toggle menu
     function toggleMenu() {
@@ -35,4 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMenu();
         }
     });
+    
+    console.log('Mobile menu initialized in mobile-menu.js');
 }); 

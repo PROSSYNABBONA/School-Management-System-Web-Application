@@ -1,7 +1,18 @@
 // Function to load header
 async function loadHeader() {
     try {
-        const response = await fetch('./header.html');
+        // Get the current page path
+        const currentPath = window.location.pathname;
+        // Determine the correct path to header.html
+        const headerPath = currentPath.includes('/js/') ? '../header.html' : './header.html';
+        
+        console.log('Loading header from:', headerPath);
+        
+        const response = await fetch(headerPath);
+        if (!response.ok) {
+            throw new Error(`Failed to load header: ${response.status} ${response.statusText}`);
+        }
+        
         const headerHtml = await response.text();
         
         // Insert header at the beginning of the body
@@ -22,6 +33,8 @@ async function loadHeader() {
 
         // Initialize mobile menu after header is loaded
         initializeMobileMenu();
+        
+        console.log('Header loaded successfully');
     } catch (error) {
         console.error('Error loading header:', error);
     }
@@ -32,6 +45,11 @@ function initializeMobileMenu() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const body = document.body;
+
+    if (!mobileMenuToggle || !navMenu) {
+        console.error('Mobile menu elements not found');
+        return;
+    }
 
     // Create menu overlay if it doesn't exist
     let menuOverlay = document.querySelector('.menu-overlay');
@@ -69,6 +87,8 @@ function initializeMobileMenu() {
             toggleMenu();
         }
     });
+    
+    console.log('Mobile menu initialized in header.js');
 }
 
 // Load header when DOM is ready

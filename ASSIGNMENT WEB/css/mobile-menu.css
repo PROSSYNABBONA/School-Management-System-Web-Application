@@ -37,10 +37,10 @@
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
-        position: absolute;
+        position: fixed;
         right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 1rem;
+        z-index: 1001;
     }
 
     .main-nav {
@@ -59,7 +59,7 @@
         flex-direction: column;
         padding: 6rem 1rem 2rem 1rem;
         transition: right 0.3s ease-in-out;
-        z-index: 999;
+        z-index: 1000;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
         margin: 0;
@@ -83,7 +83,7 @@
         width: 100%;
         text-align: left;
         border-radius: 4px;
-        color: var(--light-text);
+        color: var(--light-text) !important;
         text-decoration: none;
         transition: background-color 0.3s ease;
         font-size: 1.1rem;
@@ -91,8 +91,8 @@
 
     .nav-menu a:hover,
     .nav-menu a.active {
-        background: var(--primary-color);
-        color: var(--light-text);
+        background: var(--secondary-color);
+        color: var(--light-text) !important;
     }
 
     .nav-menu a i {
@@ -109,7 +109,7 @@
     .top-header {
         padding: 1rem 0;
         position: relative;
-        z-index: 1000;
+        z-index: 999;
     }
 
     .header-content {
