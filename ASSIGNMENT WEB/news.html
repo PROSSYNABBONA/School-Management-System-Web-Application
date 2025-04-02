@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - Bishop Cipriano Kihangire S.S</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="branding">
+                    <img src="images/logo.jpg" alt="School Logo" class="logo">
+                    <div class="school-info">
+                        <h1>Bishop Cipriano Kihangire Secondary School</h1>
+                        <p class="motto">"Per Aspara Ad Astra"</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(+256) 755 123456</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bishopkihangire.sc.ug</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="academics.html"><i class="fas fa-book-open"></i> Academics</a></li>
+                <li><a href="news.html" class="active"><i class="fas fa-calendar-alt"></i> News & Events</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-book"></i> Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- News Hero Section -->
+    <section class="news-hero">
+        <div class="container">
+            <h1>School News & Events</h1>
+            <p>Stay updated with the latest happenings at Bishop Cipriano Kihangire Secondary School</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="news-container">
+        <div class="container">
+            <div class="news-grid">
+                <!-- Recent News Section -->
+                <section class="recent-news">
+                    <h2><i class="fas fa-newspaper"></i> Recent News</h2>
+                    <div class="news-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="academic">Academic</button>
+                        <button class="filter-btn" data-category="sports">Sports</button>
+                        <button class="filter-btn" data-category="events">Events</button>
+                    </div>
+                    <div class="news-list" id="newsList">
+                        <!-- Academic News -->
+                        <article class="news-item">
+                            <img src="images/excellence in edu.jpg" alt="Excellence in Education" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Academic</span>
+                                <h3 class="news-title">Excellence in Education: Our Commitment to Quality Learning</h3>
+                                <div class="news-date">March 15, 2024</div>
+                                <p class="news-excerpt">Bishop Cipriano Kihangire Secondary School continues to maintain high academic standards, preparing students for future success.</p>
+                            </div>
+                        </article>
+
+                        <!-- Sports News -->
+                        <article class="news-item">
+                            <img src="images/sack.jpg" alt="Sports Achievement" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Sports</span>
+                                <h3 class="news-title">Sports Excellence: School Teams Shine in Regional Championships</h3>
+                                <div class="news-date">March 10, 2024</div>
+                                <p class="news-excerpt">Our school's sports teams have achieved remarkable success in recent regional competitions, showcasing talent and dedication.</p>
+                            </div>
+                        </article>
+
+                        <!-- Cultural Events -->
+                        <article class="news-item">
+                            <img src="images/kanzon culture day.jpeg" alt="Cultural Day Celebration" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Cultural Day Celebration: Embracing Diversity and Heritage</h3>
+                                <div class="news-date">March 5, 2024</div>
+                                <p class="news-excerpt">Students celebrated our rich cultural heritage through traditional performances, food, and artistic displays.</p>
+                            </div>
+                        </article>
+
+                        <!-- STEM Activities -->
+                        <article class="news-item">
+                            <img src="images/stem .jpg" alt="STEM Activities" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Academic</span>
+                                <h3 class="news-title">STEM Innovation: Students Showcase Scientific Projects</h3>
+                                <div class="news-date">March 1, 2024</div>
+                                <p class="news-excerpt">Our students demonstrated their scientific knowledge and innovation through various STEM projects and experiments.</p>
+                            </div>
+                        </article>
+
+                        <!-- Talent Show -->
+                        <article class="news-item">
+                            <img src="images/talent.jpg" alt="Talent Show" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Annual Talent Show: Students Display Extraordinary Skills</h3>
+                                <div class="news-date">February 25, 2024</div>
+                                <p class="news-excerpt">The school's annual talent show brought together students showcasing their diverse talents in music, dance, and performance arts.</p>
+                            </div>
+                        </article>
+
+                        <!-- School Structure -->
+                        <article class="news-item">
+                            <img src="images/school scruture.jpeg" alt="School Structure" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">New School Structure: Enhancing Learning Environment</h3>
+                                <div class="news-date">February 20, 2024</div>
+                                <p class="news-excerpt">Recent improvements to our school infrastructure provide better facilities for learning and development.</p>
+                            </div>
+                        </article>
+
+                        <!-- Smart Learning -->
+                        <article class="news-item">
+                            <img src="images/smart.jpeg" alt="Smart Learning" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Academic</span>
+                                <h3 class="news-title">Smart Learning Initiative: Embracing Digital Education</h3>
+                                <div class="news-date">February 15, 2024</div>
+                                <p class="news-excerpt">Our school continues to integrate technology into education, preparing students for the digital future.</p>
+                            </div>
+                        </article>
+
+                        <!-- Children's Activities -->
+                        <article class="news-item">
+                            <img src="images/childeren.jpeg" alt="Children's Activities" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Children's Day: Celebrating Young Minds</h3>
+                                <div class="news-date">February 10, 2024</div>
+                                <p class="news-excerpt">Special activities and celebrations were organized to mark Children's Day, promoting creativity and learning.</p>
+                            </div>
+                        </article>
+
+                        <!-- Additional News Items -->
+                        <article class="news-item">
+                            <img src="images/prom.jpg" alt="Prom Night" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Memorable Prom Night: Celebrating Student Achievements</h3>
+                                <div class="news-date">February 5, 2024</div>
+                                <p class="news-excerpt">Students enjoyed a spectacular prom night celebrating their academic achievements and creating lasting memories.</p>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <img src="images/retreat.jpg" alt="School Retreat" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Spiritual Retreat: Nurturing Faith and Community</h3>
+                                <div class="news-date">February 1, 2024</div>
+                                <p class="news-excerpt">Students participated in a meaningful spiritual retreat, strengthening their faith and building community bonds.</p>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <img src="images/awarding.jpg" alt="Awards Ceremony" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Academic</span>
+                                <h3 class="news-title">Annual Awards Ceremony: Recognizing Excellence</h3>
+                                <div class="news-date">January 28, 2024</div>
+                                <p class="news-excerpt">Outstanding students were recognized for their academic achievements and contributions to school life.</p>
+                            </div>
+                        </article>
+
+                        <!-- Activity News Items -->
+                        <article class="news-item">
+                            <img src="images/act 1.jpg" alt="School Activity 1" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">School Activity Day: Building Community Spirit</h3>
+                                <div class="news-date">January 25, 2024</div>
+                                <p class="news-excerpt">Students participated in various activities promoting teamwork and school spirit.</p>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <img src="images/act 2.jpg" alt="School Activity 2" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Community Service Day: Making a Difference</h3>
+                                <div class="news-date">January 20, 2024</div>
+                                <p class="news-excerpt">Students engaged in community service activities, demonstrating our commitment to social responsibility.</p>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <img src="images/act 3.jpg" alt="School Activity 3" class="news-image">
+                            <div class="news-content">
+                                <span class="news-category">Events</span>
+                                <h3 class="news-title">Sports Day: Celebrating Athletic Excellence</h3>
+                                <div class="news-date">January 15, 2024</div>
+                                <p class="news-excerpt">Annual sports day brought together students for friendly competition and athletic achievements.</p>
+                            </div>
+                        </article>
+            </div>
+                </section>
+
+                <!-- Event Calendar Section -->
+                <section class="event-calendar">
+                            <div class="calendar-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Event Calendar</h2>
+                        <div class="calendar-controls">
+                            <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                            <h3 id="currentMonth">Month Year</h3>
+                            <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                            </div>
+                        <div class="days" id="calendarDays">
+                            <!-- Days will be dynamically added here -->
+                        </div>
+                    </div>
+                    <div class="event-list" id="eventList">
+                        <!-- Events will be dynamically added here -->
+                    </div>
+                </section>
+
+                <!-- News Submission Form -->
+                <section class="news-submission">
+                    <h2><i class="fas fa-paper-plane"></i> Submit News</h2>
+                    <form id="newsForm" class="news-form">
+                        <div class="form-group">
+                            <label for="newsTitle">Title</label>
+                            <input type="text" id="newsTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsCategory">Category</label>
+                            <select id="newsCategory" required>
+                                <option value="">Select Category</option>
+                                <option value="academic">Academic</option>
+                                <option value="sports">Sports</option>
+                                <option value="events">Events</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsDate">Date</label>
+                            <input type="date" id="newsDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsContent">Content</label>
+                            <textarea id="newsContent" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsImage">Image URL (optional)</label>
+                            <input type="url" id="newsImage">
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit News
+                        </button>
+                    </form>
+        </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span>Plot 123, Kampala Road</span></p>
+                        <p><i class="fas fa-phone"></i> <span>(+256) 755 123456</span></p>
+                        <p><i class="fas fa-envelope"></i> <span>info@bishopkihangire.sc.ug</span></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/BishopCiprianoKihangireSSS/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/BishopCipriano/status/1907074606478868630"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bishopciprianokihangire/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://ug.linkedin.com/company/bishop-cipriano-kihangire"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bishop Cipriano Kihangire Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="mode-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
