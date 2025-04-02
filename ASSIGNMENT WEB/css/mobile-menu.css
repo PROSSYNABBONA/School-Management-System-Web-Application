@@ -89,8 +89,10 @@
         font-size: 1.1rem;
     }
 
-    .nav-menu a:hover {
+    .nav-menu a:hover,
+    .nav-menu a.active {
         background: var(--primary-color);
+        color: var(--light-text);
     }
 
     .nav-menu a i {
@@ -108,6 +110,62 @@
         padding: 1rem 0;
         position: relative;
         z-index: 1000;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branding {
+        margin-bottom: 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Ensure logo is properly sized */
+    .logo {
+        max-width: 80px;
+        height: auto;
+    }
+
+    /* Adjust school info for mobile */
+    .school-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .school-info .motto {
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional styles for better visibility */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        position: relative;
+        padding: 1rem 0;
     }
 
     .header-content {

@@ -160,7 +160,7 @@ body {
 }
 
 .nav-menu a {
-    color: var(--light-text);
+    color: var(--light-text) !important;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -169,13 +169,18 @@ body {
 
 .nav-menu a:hover {
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--light-text) !important;
 }
 
-.nav-menu a.active,
+.nav-menu a.active {
+    background: var(--secondary-color);
+    color: var(--light-text) !important;
+    font-weight: bold;
+}
+
 .nav-menu a.active:hover {
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--light-text) !important;
     font-weight: bold;
 }
 
@@ -645,14 +650,19 @@ body {
         width: 100%;
         text-align: left;
         border-radius: 4px;
-        color: var(--light-text);
+        color: var(--light-text) !important;
         font-size: 1.1rem;
+    }
+
+    .nav-menu a:hover {
+        background: var(--secondary-color);
+        color: var(--light-text) !important;
     }
 
     .nav-menu a.active,
     .nav-menu a.active:hover {
         background: var(--secondary-color);
-        color: var(--primary-color);
+        color: var(--light-text) !important;
         font-weight: bold;
     }
 
