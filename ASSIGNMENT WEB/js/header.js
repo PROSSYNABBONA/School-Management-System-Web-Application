@@ -29,9 +29,13 @@ async function loadHeader() {
         // Set active state for current page
         const navLinks = document.querySelectorAll('.nav-menu a');
         
+        // Get the current page filename
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
         navLinks.forEach(link => {
             const linkPath = link.getAttribute('href');
-            if (currentPath.includes(linkPath)) {
+            // Check if the current page matches the link path exactly
+            if (currentPage === linkPath) {
                 link.classList.add('active');
             } else {
                 link.classList.remove('active');
